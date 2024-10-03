@@ -589,32 +589,38 @@ This project and all associated files are the original work of ByteBanterDK. If 
     </section> 
 Advantages:
 
-Granular Control: It enables administrators to apply specific policies to individual OUs without affecting the entire domain.
-Customization: Allows for tailored configurations based on the unique requirements of different organizational units.
-Minimizing Policy Conflicts: Helps in avoiding conflicts that may arise when conflicting policies are inherited from parent containers.
-Disadvantages:
+<p><strong>Granular Control:</strong> It enables administrators to apply specific policies to individual OUs without affecting the entire domain.</p>
+<p><strong>Customisation:</strong> Allows for tailored configurations based on the unique requirements of different organisational units.</p>
+<p><strong>Minimising Policy Conflicts:</strong> Helps in avoiding conflicts that may arise when conflicting policies are inherited from parent containers.</p>
 
-Increased Complexity: Managing multiple inheritance-blocked OUs can become complex and may require careful planning and documentation.
-Potential for Overlapping Policies: Without careful planning, blocking inheritance may lead to overlapping policies, causing unintended consequences or conflicts.
-Administration Overhead: Requires ongoing monitoring and maintenance to ensure consistency and avoid unintended policy interactions.
+<h3>Disadvantages:</h3>
+<ul>
+    <li><strong>Increased Complexity:</strong> Managing multiple inheritance-blocked OUs can become complex and may require careful planning and documentation.</li>
+    <li><strong>Potential for Overlapping Policies:</strong> Without careful planning, blocking inheritance may lead to overlapping policies, causing unintended consequences or conflicts.</li>
+    <li><strong>Administration Overhead:</strong> Requires ongoing monitoring and maintenance to ensure consistency and avoid unintended policy interactions.</li>
+</ul>
+
 <img src="https://i.imgur.com/fBF1wmZ.png">
-Enforced Settings:
 
-Enforced settings, also known as "No Override," ensure that GPOs applied to parent containers are enforced on child objects, even if those child objects have Block Inheritance applied.
+<h3>Enforced Settings:</h3>
+<p>Enforced settings, also known as "No Override," ensure that GPOs applied to parent containers are enforced on child objects, even if those child objects have Block Inheritance applied.</p>
 
-Explanation:
+<h4>Explanation:</h4>
+<ul>
+    <li><strong>Forced Application:</strong> Enforced settings override any Block Inheritance settings on child objects, ensuring that policies from higher-level containers are applied.</li>
+    <li><strong>Hierarchy Preservation:</strong> Allows administrators to maintain a consistent hierarchy of policies across the domain, ensuring critical policies are applied uniformly.</li>
+    <li><strong>Prevention of Policy Evasion:</strong> Enforcing settings prevents administrators at lower levels from overriding important policies set at higher levels, maintaining security and compliance standards.</li>
+</ul>
 
-Forced Application: Enforced settings override any Block Inheritance settings on child objects, ensuring that policies from higher-level containers are applied.
-Hierarchy Preservation: Allows administrators to maintain a consistent hierarchy of policies across the domain, ensuring critical policies are applied uniformly.
-Prevention of Policy Evasion: Enforcing settings prevents administrators at lower levels from overriding important policies set at higher levels, maintaining security and compliance standards.
 <img src="https://i.imgur.com/BoTkEke.png">
+
 <h2>Exploring Default Domain Policy Settings</h2>
 
 <p>The Default Domain Policy is a critical component of Active Directory, governing various settings that ensure the security and functionality of user accounts and computers within the domain. Below are key aspects of the Default Domain Policy:</p>
 
 <h3>General Settings</h3>
 <ul>
-    <li><strong>Password Policies:</strong> These settings dictate the complexity and expiration of user passwords, helping to protect accounts from unauthorized access.</li>
+    <li><strong>Password Policies:</strong> These settings dictate the complexity and expiration of user passwords, helping to protect accounts from unauthorised access.</li>
     <li><strong>Account Lockout Policies:</strong> Define thresholds for failed login attempts, which can prevent brute-force attacks by locking accounts after a specified number of failed attempts.</li>
     <li><strong>Kerberos Authentication Settings:</strong> Crucial for secure authentication within the domain, these settings manage ticket lifetimes and renewal processes.</li>
 </ul>
@@ -629,7 +635,7 @@ Prevention of Policy Evasion: Enforcing settings prevents administrators at lowe
 <p>It may also encompass settings related to auditing and user profile configurations, which are essential for tracking user activity and managing user environments.</p>
 
 <h3>Links</h3>
-<p>The Links section specifies which Organizational Units (OUs) the policy is linked to. This determines which users and computers are affected by the policy. By default, the Default Domain Policy is linked to the root of the domain, applying its settings to all objects unless overridden by a more specific policy linked to a child OU.</p>
+<p>The Links section specifies which Organisational Units (OUs) the policy is linked to. This determines which users and computers are affected by the policy. By default, the Default Domain Policy is linked to the root of the domain, applying its settings to all objects unless overridden by a more specific policy linked to a child OU.</p>
 
 <h3>Security Filtering</h3>
 <p>Security filtering allows you to specify which users or groups the policy applies to. By default, the Default Domain Policy applies to all authenticated users in the domain, but you can use security filtering to target specific groups or users as needed, enhancing security and management efficiency.</p>
@@ -720,7 +726,7 @@ Prevention of Policy Evasion: Enforcing settings prevents administrators at lowe
     </li>
     <li>
         <strong>Exploring Default Domain Policy Settings:</strong>
-        <p>Reviewing the default domain policy settings and their impact on user accounts and security reinforced the importance of proper policy management.</p>
+             <p>Reviewing the default domain policy settings and their impact on user accounts and security reinforced the importance of proper policy management.</p>
     </li>
 </ol>
 
@@ -729,7 +735,8 @@ Prevention of Policy Evasion: Enforcing settings prevents administrators at lowe
 <h2>Get in Touch</h2>
 <p>
     If you have any questions about this project or would like to collaborate on future endeavours, feel free to reach out to me at!
-    
+</p>
+
 <img align="left" alt="ByteBanterDK | Gmail" width="22px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-1.webcatalog.io%2Fcatalog%2Fprotonmail%2Fprotonmail-icon.png&f=1&nofb=1&ipt=6df4d08d62fc42ad07c8ae70905a4a6c79ce00471af3644e6281517111e85d03&ipo=images"/>DenisKTechnology@protonmail.com
 
 
